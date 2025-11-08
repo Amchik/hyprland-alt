@@ -51,7 +51,7 @@ for pkg in $(ls -d dev-libs/* gui-libs/* gui-wm/*); do
 
     # Check ebuild for this tag
     found=0
-    for ebuild in $ebuilds; do
+    for ebuild in ${ebuilds[@]}; do
         if [[ "$ebuild" = "$pkg/$pkgname-${last_tag}.ebuild" ]]; then
             found=1
             [[ $only_failed -eq 1 ]] || \
@@ -66,9 +66,11 @@ for pkg in $(ls -d dev-libs/* gui-libs/* gui-wm/*); do
     ret=1
     if [[ $verbose -eq 1 ]]; then
         for ebuild in $ebuilds; do
-            echo "    ${COLOR_UPTODATE}- found $ebuild${COLOR_CLEAN}"
+            echo "    ${COLOR_UPTODATE}- found${COLOR_CLEAN} $ebuild"
         done
     fi
 done
+
+[[ $ret -eq 0 ]] && echo "Everything is up-to-date!"
 
 exit $ret
