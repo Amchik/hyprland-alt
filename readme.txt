@@ -46,15 +46,26 @@ to either use >=gcc-15 or compile it with new gcc. There is my configuration:
 | RANLIB="ranlib"                                       |
 +-------------------------------------------------------+
 
-Unchanges ebuilds:
-- dev-libs/hyprland-protocols    - version bump
+OVERLAY MAINTAIN:
+Do `bash check-versions.bash --color --only-failed` to see what ebuilds
+needs to be updated.
+
+TODO:
+- [ ] auto-check for new versions (partially implemented in check-versions.bash)
+- [ ] fix dependencies version in *many* ebuilds to match it's CMakeLists.txt
+- [ ] add *-9999 versions
+
+------------------
+
+Unchanged ebuilds (version bumps):
+- dev-libs/hyprland-protocols
 - dev-libs/hyprlang
-- gui-libs/aquamarine            - version bump
-- dev-libs/hyprgraphics          - version bump, deps fix
+- gui-libs/aquamarine
+- dev-libs/hyprgraphics
 - gui-libs/hyprcursor
-- gui-libs/hyprutils             - version bump
-- gui-wm/hyprland                - version bump
-- gui-libs/xdg-desktop-portal-hyprland - version bump
+- gui-libs/hyprutils
+- gui-wm/hyprland
+- gui-libs/xdg-desktop-portal-hyprland
 
 New ebuilds:
 - gui-libs/hyprtoolkit
