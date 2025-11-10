@@ -2,8 +2,8 @@
 <!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<upstream>
-		<changelog>https://github.com/hyprwm/hyprutils/releases</changelog>
-		<bugs-to>https://github.com/hyprwm/hyprutils/issues</bugs-to>
-		<remote-id type="github">hyprwm/hyprutils</remote-id>
+		<changelog>https://github.com/hyprwm/hyprtoolkit/releases</changelog>
+		<bugs-to>https://github.com/hyprwm/hyprtoolkit/issues</bugs-to>
+		<remote-id type="github">hyprwm/hyprtoolkit</remote-id>
 	</upstream>
 </pkgmetadata>
