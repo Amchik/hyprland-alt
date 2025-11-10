@@ -8,8 +8,8 @@ SRC_URI="https://github.com/hyprwm/${PN}/archive/refs/tags/v${PV}/v${PV}.tar.gz 
 
 LICENSE="BSD"
 
-SLOT="0"
-KEYWORDS="~amd64"
+SLOT="0/$(ver_cut 1-2)"
+KEYWORDS="" # because of ABI break.............
 
 RDEPEND="
 	>=gui-libs/aquamarine-0.9.5:=

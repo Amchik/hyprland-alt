@@ -9,11 +9,11 @@ SRC_URI="https://github.com/hyprwm/${PN}/archive/refs/tags/v${PV}/v${PV}.tar.gz 
 LICENSE="BSD"
 
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64"
 
 RDEPEND="
 	dev-libs/hyprlang
-	gui-libs/hyprtoolkit
+	gui-libs/hyprtoolkit:=
 	gui-libs/hyprutils:=
 	x11-libs/libdrm
 	x11-libs/pixman
